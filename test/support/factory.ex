@@ -95,7 +95,7 @@ defmodule Adoptoposs.Factory do
     %Network.Repository{
       id: sequence("id"),
       name: sequence("Repo"),
-      description: "<div>Solving <i>all</i> the issues</div>",
+      description: "Solving all the issues",
       url: sequence(:url, &"https://example.com/repos/repo#{&1}"),
       owner: build(:contributor),
       language: build(:language),
